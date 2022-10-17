@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(148, 157, 51);">MATERI PELUANG</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://asset.kompas.com/crops/WgXJKGlHy8MHStae7rKMRc0WtSI=/0x34:1748x1199/750x500/data/photo/2022/01/13/61df8a8d6c60b.png" alt="Logo Untirta" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(135, 30, 30, 0.568) ;">Materi Peluang</h4>
+    <body>
+        <h5 style="font-family: 'times new roman'">Peluang Teoritik</h5>
+    <ol>
+        <li>Ruang sampel dan Titik sampel</li>
+        <p style="font-family: 'times new roman'">Ruang sampel adalah himpunan dari titik sampel. Ruang sampel juga biasa disebut dengan semesta dan disimbolkan dengan S. Ruang sampel berisi seluruh titik sampel yang ada, alias semua kemungkinan yang dapat muncul pada suatu percobaan.</p>
+        <li>Nilai Peluang</li>
+        <p style="font-family: 'times new roman'">Nilai peluang merupakan perkiraan kemungkinan munculnya suatu kejadian didalam sebuah ruang sampel. Secara matematis peluang munculnya kejadia A dapat dirumuskan sebagai berikut : P(A) = n(A)/n(S)</p>
+        <li>Kisaran Nilai Peluang</li>
+        <p style="font-family: 'times new roman'">Secara sederhana kisaran nilai peluang dapat diartikan sebagai perkiraan kemungkinan munculnya suatu kejadian di dalam sebuah ruang sampel. Secara matematis, ditulis dengan 0≤P(K)≤1. Jika L merupakan kejadian komplemen dari kejadian K maka peluang kejadian L adalah satu dikurangi peluang kejadian K. Secara matematis, ditulis P(L)= 1-K atau P(L) +P(K)=1.</p>
+    </ol>
+    </body>
+    
+    <body>
+        <h5 style="font-family: 'times new roman'">Peluang Empirik</h5>
+    <ol>
+        <li>Cara yang Digunakan untuk Menentukan Ruang Sempel Suatu Percobaan</li>
+        <p style="font-family: 'times new roman'">Dengan cara mendaftar, Dengan cara membuat table, Dengan Cara Membuat Diagram Pohon, Menggunakan Diagram Cartesius.</p>
+        <li>Kejadian Tunggal</li>
+        <p style="font-family: 'times new roman'">Kejadian tunggal adalah kejadian sederhana yang menghasilkan suatu titik sampel.</p>
+        <li>Kejadian Majemuk</li>
+        <p style="font-family: 'times new roman'">Kombinasi percobaan dengan menggunakan ruang sampel yang ada disebut kejadian majemuk.</p>
+        <li>Konsep Peluang Empirik</li>
+        <p style="font-family: 'times new roman'">Nilai peluang suatu kejadian adalah bilangan tertentu yang didekati oleh frekuensi relatif apabila percobannya sangat banyak. rumusnya : Peluang empirik/frekuensi relatif = banyaknya kejadian dimaksud muncul/banyak percobaan</p>
+    </ol>
+    </body>
+
+    <h5 style="font-family: 'times new roman'">Modul yang dapat digunakan</h5>
+    <p style="font-family: 'times new roman'">Untuk menambah pemahaman kalian terhadap materi, berikut ini modul yang dapat dipelajari</p>
+    <a href="https://drive.google.com/file/d/1XyTu94kFHN0bA0kaC7DTfz9t8DC15-Lp/view?usp=sharing">Link Modul</a>
+    
+
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

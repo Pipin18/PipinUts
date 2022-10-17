@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(38, 79, 45);">LATIHAN SOAL PELUANG</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://www.kibrispdr.org/data/537/gambar-selamat-mengerjakan-16.jpg" alt="Logo Latihan" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(135, 30, 30, 0.568) ;">Latihan Soal</h4>
+    <p style="font-family: 'times new roman'">Untuk Memahami materi lebih dalam kalian dapat mengerjakan soal quiziz berikut ini :</p>
+    <a href="https://quizizz.com/join/quiz/627de27774b51a001eef8d63/start?studentShare=true">Link Latihan Soal</a>
+    
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

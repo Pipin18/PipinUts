@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(138, 154, 51);">VIDEO PEMBELAJARAN</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://player.slideplayer.info/81/13477698/slides/slide_1.jpg" alt="Logo Untirta" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(135, 30, 30, 0.568) ;">Video Pembelajaran Materi Peluang</h4>
+    <p style="font-family: 'times new roman'">berikut ini adalah link video pembelajaran Materi peluang teoritik dan empirik</p>
+    <a href="https://youtu.be/Miu17VVFHD4">Link Video Pembelajaran</a>
+    
+
+
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}
